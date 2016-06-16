@@ -1,0 +1,112 @@
+# Wavefront MTL
+# Created by fragMOTION
+# http://www.fragmosoft.com
+
+newmtl 3934_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3934.jpg
+newmtl 3927_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3927.jpg
+newmtl 3928_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3928.jpg
+newmtl 3929_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3929.jpg
+newmtl 3932_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3932.jpg
+newmtl 3933_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3933.jpg
+newmtl 3936_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3936.jpg
+newmtl 3937alpha_mtl
+illum 2
+d 0.08
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3937.jpg
+newmtl 3938_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3938.jpg
+newmtl 3940_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3940.jpg
+newmtl 3941_mtl
+illum 2
+d 1
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3941.jpg
+newmtl 3930alpha_mtl
+illum 2
+d 0.08
+ka 1 1 1
+kd 1 1 1
+ks 1 1 1
+ke 0 0 0
+ns 40
+map_Kd 3930.jpg

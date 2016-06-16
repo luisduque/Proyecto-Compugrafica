@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width"><!--, user-scalable=no">-->
+
+	<title>Colisiones & Plataformas | Compugráfica 2015-1</title>
+	<meta name="description" content="Proyecto de Aula 1 | Compugráfica 2015-1">
+	<meta name="author" content="paronia">
+
+	<link rel="stylesheet" href="./stylesheets/stylesheet.css">
+
+	<!--[if lt IE 9]>
+ 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ 	<![endif]-->
+
+ 	<script src="./js/libs/jquery-1.11.1.js"></script>
+ 	<script src="./js/libs/three.js"></script>
+ 	<script src="./js/libs/OrbitControls.js"></script>
+ 	<script src="./js/libs/Stats.js"></script>
+ 	<script src="./js/utils.js"></script>
+ 	<script src="./js/keyEvents.js"></script>
+ 	<script src="./js/Sound.js"></script>
+ 	 	<script src="./js/niveles.js"></script>
+ 	 	<script src="js/loaders/DDSLoader.js"></script>
+ 	<script src="js/loaders/MTLLoader.js"></script>
+ 	<script src="js/loaders/OBJLoader.js"></script>
+ 	<script src="js/loaders/OBJMTLLoader.js"></script>
+ 		<script src="./js/libs/ColladaLoader.js"></script>
+
+ 	<style type="text/css">
+ 	#loadingBar{
+ 		width:100%; height:100%; background-color:black;font-size:250%;color:white;
+ 		position: absolute;
+ 		text-align: center;
+ 		margin-top: 0%;
+ 	}
+ 	</style>
+ 	
+ </head>
+ <body>
+
+ 	<div id="loadingBar" >
+ 		Cargando...
+ 	</div>
+ 	<script src="./js/src.js"></script>
+ <script>
+webGLStart();
+
+ 			video      = document.createElement('video');
+            video.src = "./videos/Intro.mp4";
+            video.load();
+
+            videoImage = document.createElement( 'canvas' );
+            videoImageContext = videoImage.getContext( '2d' );
+            videoImageContext.fillStyle = '#000000';
+	         videoImageContext.fillRect( 0, 0, videoImage.width, videoImage.height );
+	        videoImage.width = 720;
+	        videoImage.height = 480;
+	        video.play();
+	        video.onended="nivel1();"
+
+            	
+            
+ 	//Cuando todo esté cargado, ejecute
+ 		$(function(){
+
+ 			video.play();
+ 			video.addEventListener('ended', function(){
+         nivel1();
+        });
+
+ 		   videoTexture = new THREE.Texture( videoImage );
+	       videoTexture.minFilter = THREE.LinearFilter;
+	       videoTexture.magFilter = THREE.LinearFilter;
+
+	       var movieMaterial = new THREE.MeshBasicMaterial( { map: videoTexture, overdraw: true, side:THREE.DoubleSide } );
+	
+	       var movieMaterial = new THREE.MeshBasicMaterial( { map: videoTexture, overdraw: true, side:THREE.DoubleSide } );
+
+	
+	
+	
+	var movieGeometry = new THREE.PlaneGeometry( 720, 480, 4, 4 );
+	movieScreen = new THREE.Mesh( movieGeometry, movieMaterial );
+	movieScreen.position.set(150,2000,-850);
+	escena.add(movieScreen);
+	
+
+
+ 			
+ 		});
+ 	</script>
+ </body>
+ </html>
